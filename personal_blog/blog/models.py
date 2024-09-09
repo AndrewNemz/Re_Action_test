@@ -27,8 +27,12 @@ class Post(models.Model):
         max_length=256,
         verbose_name='Текст поста',
     )
-    created = models.DateTimeField(auto_now_add=True)
+    created = models.DateTimeField(
+        verbose_name='Дата создания',
+        auto_now_add=True
+    )
     post_status = models.CharField(
+        verbose_name='Статус поста',
         max_length=15,
         choices=POST_STATUS,
         default=NOT_PUBLISHED,
