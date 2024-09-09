@@ -35,7 +35,7 @@
 ```
 git git@github.com:AndrewNemz/Re_Action_test.git
 
-cd cinema_poster
+cd Re_Action_test
 ```
 
 ### Cоздать и активировать виртуальное окружение:
@@ -55,3 +55,30 @@ source venv/bin/activate
 ```
 source venv/Scripts/activate
 ```
+
+### Установить зависимости из файла requirements.txt:
+
+```
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### Выполнить миграции:
+
+```
+cd personal_blog
+python3 manage.py migrate
+```
+
+### Создать суперпользователя (для раздачи прав админам):
+
+```
+python manage.py createsuperuser
+```
+
+### Запустить проект:
+
+```
+python manage.py runserver
+```
+
