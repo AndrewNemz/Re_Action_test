@@ -82,6 +82,12 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
+### Документация проекта доступна по url:
+
+```
+  http://127.0.0.1:8000/api/docs/
+```
+
 # Примеры запросов:
 
 ### Регистрация нового пользователя
